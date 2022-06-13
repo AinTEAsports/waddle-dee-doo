@@ -72,7 +72,6 @@ async fn main() {
 
     for url in options.urls.iter() {
         url_object = URL::new(url.as_str());
-        // println!("{} => {}", url_object.get_url(), url_object.is_accessible().await);
         println!("{}", url_object.resumed_content().await);
     }
 }
